@@ -23,8 +23,7 @@ export default function Weather() {
                 />
 
                 <div class="temperature">
-                  <span id="temp">22</span>
-                  {" "}
+                  <span id="temp">22</span>{" "}
                   <a href="#" id="celsius-link" class="active">
                     {" "}
                     °C{" "}
