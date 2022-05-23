@@ -19,6 +19,7 @@ export default function Weather() {
                 <img
                   src="http://openweathermap.org/img/wn/10d@2x.png"
                   className="float-left"
+                  alt="weather icon"
                 />
 
                 <div class="temperature">
@@ -27,10 +28,7 @@ export default function Weather() {
                     {" "}
                     °C{" "}
                   </a>
-                  |
-                  <a href="/">
-                    °F
-                  </a>
+                  |<a href="/">°F</a>
                 </div>
               </div>
             </div>
