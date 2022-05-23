@@ -1,0 +1,81 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(img/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  /* background-color: #e5ebef; */
+}
+
+form {
+  margin-left: auto;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+
+ul {
+  list-style: none;
+  color: gray;
+}
+span.sky {
+  color: gray;
+}
+input {
+  height: 38px;
+}
+#temp {
+  font-size: 30px;
+  float: left;
+}
+
+.content {
+  margin-left: 15px;
+}
+.container {
+  margin-top: 40px;
+}
+
+.weather-app-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.weather-app {
+  border: 1px solid;
+  border-color: #bdbdbd;
+  padding: 15px;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle at 12.8% 28%,
+    rgb(206, 155, 243) 0%,
+    rgb(142, 229, 247) 90%
+  );
+  opacity: 0.8;
+  display: block;
+}
+.temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.temperature .active:hover {
+  text-decoration: none;
+}
+
+.float-left {
+  float: left;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+.weather-forecast-date {
+  font-size: 16px;
+}
