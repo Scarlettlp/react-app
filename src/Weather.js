@@ -5,54 +5,74 @@ export default function Weather() {
   return (
     <div className="container">
       <div className="weather-app-wrapper">
-        <div className="weather-app">
+        <div className="App">
           <form>
             <input type="search" placeholder="Enter a city..." />
             <input type="submit" value="Search" />
             <input type="submit" value="Current" />
           </form>
-
-          <h1 className="date"> Sunday 07:43</h1>
-          <div className="row">
-            <div className="col-6">
-              <div className="clearfix">
-                <img
-                  src="http://openweathermap.org/img/wn/10d@2x.png"
-                  className="float-left"
-                  alt="weather icon"
-                />
-
-                <div class="temperature">
-                  <span id="temp">22</span>{" "}
-                  <a href="/" id="celsius-link" class="active">
-                    {" "}
-                    °C{" "}
-                  </a>
-                  |<a href="/">°F</a>
+        </div>
+        <div className="weather-summary">
+          <div className="weather-summary-header">
+            <div className="weather-summary-header">
+              <h1>Paris</h1>
+              <div className="weather-detail-text"> Monday 06:51</div>
+              <div className="weather-detail-text"> Clouds</div>
+            </div>
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="clearfix">
+                  <div className="float-left weather-icon">
+                    <canvas width="38" height="38"></canvas>
+                  </div>
+                  <div className="weather-temp-today">15</div>
+                  <div className="Weather-unit">°C</div>
                 </div>
               </div>
-            </div>
-            <div className="col-6">
-              <ul>
-                <li>
-                  Humidity: <span id="humidity"> 30</span>%
-                </li>
-                <li>
-                  Wind: <span id="wind"> 21</span> km/h
-                </li>
-              </ul>
+              <div className="col-6">
+                <div className="weather-detail">Precipitation: 32%</div>
+                <div className="weather-detail">Wind: 3km/h</div>
+              </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-2">
-              <span className="sky" id="description">
-                Clear
-              </span>
+            <div className="col-sm-2">
+              <div class="forecast-day">Tue</div>
+              <div class="forecast-icon">
+                <canvas width="38" height="38"></canvas>
+              </div>
+              <div class="forecast-temperature">15°</div>
             </div>
-            <h2 id="city">San Francisco, California, EU.</h2>
+            <div class="col-sm-2">
+              <div class="forecast-day">Wed</div>
+              <div class="forecast-icon">
+                <canvas width="38" height="38"></canvas>
+              </div>
+              <div class="forecast-temperature">17°</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="forecast-day">Thu</div>
+              <div class="forecast-icon">
+                <canvas width="38" height="38"></canvas>
+              </div>
+              <div class="forecast-temperature">21°</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="forecast-day">Fri</div>
+              <div class="forecast-icon">
+                <canvas width="38" height="38"></canvas>
+              </div>
+              <div class="forecast-temperature">21°</div>
+            </div>
+            <div class="col-sm-2">
+              <div class="forecast-day">Sat</div>
+              <div class="forecast-icon">
+                <canvas width="38" height="38"></canvas>
+              </div>
+              <div class="forecast-temperature">19°</div>
+            </div>
           </div>
-          <br />
-          <div className="weather-forecast" id="forecast"></div>
+          </div>
         </div>
         <small>
           <a href="https://github.com/Scarlettlp/Weather-app">
@@ -61,6 +81,6 @@ export default function Weather() {
           by Scarlett Lara
         </small>
       </div>
-    </div>
+    
   );
 }
