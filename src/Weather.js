@@ -72,15 +72,12 @@ export default function Weather() {
               <div class="forecast-temperature">19°</div>
             </div>
           </div>
-          </div>
         </div>
-        <small>
-          <a href="https://github.com/Scarlettlp/Weather-app">
-            Open-source code
-          </a>
-          by Scarlett Lara
-        </small>
       </div>
-    
+      <small>
+        <a href="https://github.com/Scarlettlp/Weather-app">Open-source code</a>
+        by Scarlett Lara
+      </small>
+    </div>
   );
 }
